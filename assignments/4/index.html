@@ -1,16 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>JS Practice</title>
-    <meta charset="UTF-8" />
-  </head>
-<body>
-	<h1>JS Practice</h1>
-	<button id = "greeting"> CLICK ME! </button>
-	<div id = "output"> </div>
+<!--
+Assignment 02 
+Ethan M. Garcia 
+Started on: 9/15/2025
+Ended on: 9/15/2025
+-->
 
-	<script src = "hello.js"> </script>
-	<script> document.getElementById("greeting").addEventListener("click", function() {document.getElementById("output").textContent = createMessage(greetingMessage); });
-    </script>
-</body>
+<!--I wasn't sure how to set up the doctype declaration properly so I had to look it up-->
+<!DOCTYPE html>
+<!--after doing the check on https://validator.w3.org/nu/, I got notified that I needed to add this -->
+<html lang="en">
+    <head>
+        <!--Continuing on from line 8's Comment, I found an image of what I should put on to have the proper document type declaration here is the image link (the website itself shows up as nonprivate connection
+        so what I will be sharing is the image's link address and not the link address itself. : https://lh6.googleusercontent.com/proxy/PfzYT3MBaDEGusvLBVpTuYtxIckFktKJWU8VPk3McvuVw5laFfpS0GC1yEaX-g-TJUmkYdct3JcbEPH7SWQB--S5kjL_W2k_RP9cX1SBlOIBXGXZ_Gcn4DI)-->
+        <meta charset="utf-8">
+        <title>About Me</title>
+        <!--I got help fromhttps://www.w3schools.com/html/html_images.asp, I didn't know how to correctly add images-->
+        <style> img{ width: 50%}
+
+        </style>
+    </head>
+
+    <body>
+
+    <header>
+        <h1>Ethan Garcia</h1>
+        <p>Computer Engineering Major + Biology Minor + future Business Major</p>
+    </header>
+
+    <!--Continuation from the help I got from w3schools-->
+    <img src="me.jpg" alt="A mirror photo I took, I thought I looked good, I am wearing a Tom Bain White Shirt, Tweed Blazer, and my hair is dyed platinum" height="1173">
+    <main>
+        <h2>About Me</h2>
+        <p>Hello, My name is Ethan M. Garcia. I am a student at San Francisco State University. I am 22 years old and I am very passionate about learning new things. When I was
+             a kid, I would watch Animal Planet with my dad which got me into learning about reptiles and insects. My favorites would change like the seasons, my first favorite 
+             lizard was the Gila Monster, then it switched to the Green Pit Viper, and if I were to list the rest, this webpage would look like an Obelisk full of venomous snakes and
+             spiders. As I grew older, I realized that I worked well with computers. With the help of my mother, I developed my understanding of computers during middle school. 
+             It began with us fixing an old laptop that my uncle gave us. We were able to reinstall the Windows OS and reconfigure the default language (Italian) into English. 
+             From there, we took math courses seriously. My mother and I would watch Algebra II and Pre-Calc videos on youtube. I felt like I would be a great computer engineer. 
+        </p>
+        <p>After entering college, I found it a bit difficult to stay motivated to continue my major. There were a few professors that really made me want to quit this major however,
+             Professors like Yash Gandhi, James Wong, Jeonghee Kim, and Duc Ta inspired me to continue on the path that I am on today. Continuing on, another Professor that inspired me 
+             to expand my career horizons was professor Amedeo Simoncini. The class he taught was ENGR 610, "Engineering Cost Analysis", that class combinded the business aspect of engineering.
+             I really enjoyed being in the class, which may be surprising since the entire grade was based on exams (3 total with the weight of each being 33%). It was MS Excel focused, which
+             gave me a feeling of familiarity since my mother had a "Business-focused" career. It was a class that gave me some sort of purpose with major.  
+             
+        </p>
+        <h2>Skills</h2>
+        <h3>Programming Languages</h3>
+        <ul>
+            <li>Java</li>
+            <li>C</li>
+            <li>System Verilog</li>
+            <li>Verilog</li>
+            <li>C++</li>
+        </ul>
+        <h3>Tools</h3>
+        <ul>
+            <li>VS Code</li>
+            <li>IntelliJ</li>
+            <li>ModelSim</li>
+        </ul>
+        <h2>Projects</h2>
+        <h3>Calculator</h3>
+        <ul>
+            <li>My first assignment for CSC 413 (before I dropped it), I had to make a functional calculator app with javascript (I didn't know JS at the time :/)</li>
+            <li>It was all coding based and the professor gave us a skeleton code to work off of</li>
+            <li>The only good thing that came from my attempt was that I didn't brick my PC</li>
+        </ul>
+        <h3>PCB Board</h3>
+        <ul>
+            <li>A project of mine for my ENGR 301 class revolved around making device that takes in 
+                audio and outputs that audio through a pair of headphones. The device's main body was a PCB board. We utilized the "Eagle" software offered by Autodesk</li>
+            <li>It was first done virtually, however we needed to send our schematic to our professor so he can get them created. We also needed to purchase
+                components like resistors, capacitors, and earphone input jacks. 
+            </li>
+            <li>I learned what went into board creation as well as learning how to solder components into said board. </li>
+        </ul>
+    
+        <footer>
+        <h2>Contact Links</h2>
+        <!--I had to look up a w3schools.com tutorial to learn how to set this up-->
+        <!--https://www.w3schools.com/html/html_links.asp aswell as https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_title -->
+        <a href="https://github.com/CaligulaXO" title="Go to my Github profile">Github</a>
+        <a href="www.linkedin.com/in/ethan-g-432a04384" title="Go to my Linkedin profile">Linkedin</a>
+
+        </footer>
+    </main>
+    </body>
+    
 </html>
