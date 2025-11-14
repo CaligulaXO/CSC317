@@ -2,15 +2,63 @@
 Assignment 04 
 Ethan M. Garcia 
 Started on: 11/11/2025
-Ended on: 11/11/2025
+Ended on: 11/13/2025
 -->
 
-
+<!--I recieved a lot of help from a video by a youtuber named Bro Code, his video is: https://youtu.be/I5kj-YsmWjM?si=cTyFk11bH8HuJIcT
+ I will also note where I got help in shaping this html-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
+
+        <!-- Controlling the scale of the calculator -->
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0" >
         <title>Calculator</title>
+        <link rel="stylesheet" href="styles/calculator.css">
     </head>
+
+    <body>
+        <div class="calculator">
+        <!--The calculator screen that gets updated when pressing the buttons or typing on the keyboard  -->
+        <input type="text" id="display" class="display" readonly >
+        <div class="grid">
+            <!--Following the layout of the IOS Calculator App, If given more time, id like to put on all the functions as if the
+            calculator was set to landscape -->
+            <button onclick="delRecent()">BCK</button>
+            <button onclick="clearDisplay()">CLR</button>
+            <button onclick="percentage()">%</button>
+            <button onclick="appendToDisplay('/')">/</button>
+
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">x</button>
+            
+            
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="toggle()">(-/+)</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+        
+
+        </div>
+        </div>
+
+        <!--lets us use the js file-->
+        <script src="scripts/calculator.js"></script>
+        
+    </body>
+    <footer><h3>Link to my portfolo</h3>
+        <a href="https://caligulaxo.github.io/CSC317/assignments/4/index.html" title="my portfolio">Portfolio</a></footer>
 </html>
